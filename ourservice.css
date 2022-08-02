@@ -43,7 +43,7 @@ header  .seprator::after{
 }
 section
 {
-    width: 54%;
+    width: 60%;
 }
 #logo-image
 {
@@ -63,7 +63,7 @@ nav{
     background-color:  #355372;
 
 }
-.container-fluid ul span::after{
+.container ul span::after{
     content:'|';
     color: white;
     display: flex;
@@ -105,8 +105,8 @@ footer .footer a{
 
 }
 .main-content{
-    background: linear-gradient(rgba(0,0,0,0.5) ,rgba(14, 34, 58, 0.91) 20%);
-    background-color: rgba(14, 34, 58, 0.91);
+    background-color: rgba(14, 34, 58, 0.3);
+    background: linear-gradient(rgba(0,0,0,0.5) ,rgba(14, 34, 58, 0.91) 30%);
     outline: 1px solid rgba(128,128,128,0.28);
     outline-offset: -5.5px;
 }
@@ -169,7 +169,7 @@ strong{
         font-size: 80%;
         color: rgb(159, 210, 239);
     }
-    .container-fluid ul span::after{
+    .container ul span::after{
         content:'';
         color: white;
         padding: 0 !important;
