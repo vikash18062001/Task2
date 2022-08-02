@@ -4,9 +4,9 @@
 }
 body{
     background-image: url('images/bg.jpg');
-    height: 100vh;
+    /* height: 100vh; */
     font-family: 'Trebuchet MS';
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 header{
@@ -40,6 +40,7 @@ section
 }
 #logo-image
 {
+    position: fixed;
     padding-top: 6px;
     width: 25%;
 }
@@ -142,15 +143,25 @@ footer .footer a{
     .nav-item a{
         font-size: 40%;
         color: rgb(159, 210, 239);
-    
     }
      
  }
- @media only screen and (max-width:780px){
-    .nav-item a{
-        font-size: 20%;
-        color: rgb(159, 210, 239);
-    
+ @media only screen and (max-width:767px){
+    .container-fluid ul span::after{
+        content:'';
+        color: white;
+        padding: 0 !important;
+        display: flex;
+    }
+    .nav-list-item {
+        margin:0  !important;
+        padding: 0 !important;
+    }
+    #logo-image{
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex;
+        top: -8%;
     }
      
  }
