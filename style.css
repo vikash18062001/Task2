@@ -4,10 +4,10 @@
 }
 body{
     background-image: url('images/bg.jpg');
-    /* height: 100vh; */
     font-family: 'Trebuchet MS';
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 header{
     background-color: rgba(56,90,140,0.8);
@@ -45,9 +45,15 @@ section
     width: 25%;
 }
 nav{
-    width: 100%;
+    /* width: 100%; */
     outline: 1px solid rgba(128,128,128,0.2);
     outline-offset: -5.5px;
+}
+.navbar-toggler-icon{
+background-image: url('images/main-menu.png')  !important;
+width: 1.1rem;
+height: 1.9rem;
+
 }
 .nav-list-item:hover{
     background-color:  #355372;
@@ -73,6 +79,7 @@ nav{
     background: linear-gradient(rgba(0,0,0,0.5) ,rgba(14, 34, 58, 0.91) 50%);
     background-color: rgba(14, 34, 58, 0.91);
     outline: 1px solid rgba(128,128,128,0.28);
+    box-sizing: border-box;
     outline-offset: -5.5px;
 }
 .about-container img{
@@ -92,15 +99,16 @@ nav{
     --bs-navbar-padding-y:0;
     background-color: rgba(20, 44, 69, 0.95);
 }
-.heading-content ul li{
-    font-size: 30px;
-    line-height: 90%;
+.heading-content p{
+    font-size: 200%;
+    line-height: 120%;
     padding-left: 20px;
     padding-top: 10px;
+    text-shadow: 2px 2px rgb(63, 61, 61);
 
 }
 .about-container p{
-    font-size: 73%;
+    font-size: 80%;
     line-height: 18px;
     font-weight: lighter;
 }
@@ -147,6 +155,10 @@ footer .footer a{
      
  }
  @media only screen and (max-width:767px){
+    .nav-item a{
+        font-size: 80%;
+        color: rgb(159, 210, 239);
+    }
     .container-fluid ul span::after{
         content:'';
         color: white;
